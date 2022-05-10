@@ -1,0 +1,10 @@
+title Video Playback Service Overview
+
+entryspacing 0.8
+User/Client->Playback Service:Sends a Playback Request 
+Playback Service<-->Authorization Service:Check User's Authenticity
+Playback Service<-->Steering Service:Picks the best CDN URL for the playback
+User/Client<-Playback Service:Returns the CDN URL
+User/Client<->Steering Service:Downloads the provided CDN Content
+User/Client-->Playback Service:Tracked events sent to server for improving the services
+Playback Service->Playback Experience Service:Publishes the Tracked Events for Improving Playback Experience

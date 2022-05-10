@@ -1,0 +1,10 @@
+title Playback Search Service Overview
+
+entryspacing 0.8
+User/Client->Search Service:Searches for a Video title 
+Search Service<-->Elastic Search Service:Checks if the requested video exists in Search Index
+Search Service<-->Storage Service:Fetches the details of Searched Video
+User/Client<-Search Service:Returns Searched Video Details to User
+Search Service<-->Recommender Service:Fetches Recommanded Videos to User
+Search Service<-->Storage Service:Fetches the details of Recommended Video
+User/Client<-Search Service:Returns Recommended Videos Details to User
